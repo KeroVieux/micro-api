@@ -2,7 +2,8 @@
 ## How to start
 ```
 yarn
-npm start
+npm start_pm2
+pm2 kill
 ```
 ## Guide
 ### query
