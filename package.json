@@ -1,7 +1,8 @@
 {
   "name": "json-api",
   "scripts": {
-    "start": "micro"
+    "start": "micro",
+    "start_pm2": "pm2 start ecosystem.config.js --only dev-pm2"
   },
   "dependencies": {
     "fs-router": "^0.4.0",
