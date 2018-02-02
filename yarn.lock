@@ -71,6 +71,10 @@ arrify@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/arrify/download/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
+async@0.2.10:
+  version "0.2.10"
+  resolved "http://registry.npm.taobao.org/async/download/async-0.2.10.tgz#b6bbe0b0674b9d719708ca38de8c237cb526c3d1"
+
 babel-code-frame@^6.22.0:
   version "6.26.0"
   resolved "http://registry.npm.taobao.org/babel-code-frame/download/babel-code-frame-6.26.0.tgz#63fd43f7dc1e3bb7ce35947db8fe369a3f58c74b"
@@ -82,6 +86,12 @@ babel-code-frame@^6.22.0:
 balanced-match@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/balanced-match/download/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
+
+binary-search-tree@0.2.5:
+  version "0.2.5"
+  resolved "http://registry.npm.taobao.org/binary-search-tree/download/binary-search-tree-0.2.5.tgz#7dbb3b210fdca082450dad2334c304af39bdc784"
+  dependencies:
+    underscore "~1.4.4"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -511,6 +521,10 @@ ignore@^3.3.3:
   version "3.3.7"
   resolved "http://registry.npm.taobao.org/ignore/download/ignore-3.3.7.tgz#612289bfb3c220e186a58118618d5be8c1bab021"
 
+immediate@~3.0.5:
+  version "3.0.6"
+  resolved "http://registry.npm.taobao.org/immediate/download/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "http://registry.npm.taobao.org/imurmurhash/download/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -587,6 +601,10 @@ is-stream@1.1.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/is-stream/download/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
+is_js@^0.9.0:
+  version "0.9.0"
+  resolved "http://registry.npm.taobao.org/is_js/download/is_js-0.9.0.tgz#0ab94540502ba7afa24c856aa985561669e9c52d"
+
 isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/isarray/download/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
@@ -635,6 +653,12 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lie@3.1.1:
+  version "3.1.1"
+  resolved "http://registry.npm.taobao.org/lie/download/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
+  dependencies:
+    immediate "~3.0.5"
+
 load-json-file@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/load-json-file/download/load-json-file-2.0.0.tgz#7947e42149af80d696cbf797bcaabcfe1fe29ca8"
@@ -643,6 +667,12 @@ load-json-file@^2.0.0:
     parse-json "^2.2.0"
     pify "^2.0.0"
     strip-bom "^3.0.0"
+
+localforage@^1.3.0:
+  version "1.5.6"
+  resolved "http://registry.npm.taobao.org/localforage/download/localforage-1.5.6.tgz#d034d15e5372ee97c64173e9a9aeb96815f5dd06"
+  dependencies:
+    lie "3.1.1"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -693,7 +723,7 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "http://registry.npm.taobao.org/minimist/download/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-mkdirp@^0.5.1:
+mkdirp@^0.5.1, mkdirp@~0.5.1:
   version "0.5.1"
   resolved "http://registry.npm.taobao.org/mkdirp/download/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
@@ -714,6 +744,16 @@ mute-stream@0.0.7:
 natural-compare@^1.4.0:
   version "1.4.0"
   resolved "http://registry.npm.taobao.org/natural-compare/download/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
+
+nedb@^1.8.0:
+  version "1.8.0"
+  resolved "http://registry.npm.taobao.org/nedb/download/nedb-1.8.0.tgz#0e3502cd82c004d5355a43c9e55577bd7bd91d88"
+  dependencies:
+    async "0.2.10"
+    binary-search-tree "0.2.5"
+    localforage "^1.3.0"
+    mkdirp "~0.5.1"
+    underscore "~1.4.4"
 
 normalize-package-data@^2.3.2:
   version "2.4.0"
@@ -884,6 +924,12 @@ readable-stream@^2.2.2:
     safe-buffer "~5.1.1"
     string_decoder "~1.0.3"
     util-deprecate "~1.0.1"
+
+request-ip@^2.0.2:
+  version "2.0.2"
+  resolved "http://registry.npm.taobao.org/request-ip/download/request-ip-2.0.2.tgz#deeae6d4af21768497db8cd05fa37143f8f1257e"
+  dependencies:
+    is_js "^0.9.0"
 
 require-uncached@^1.0.3:
   version "1.0.3"
@@ -1068,6 +1114,10 @@ type-check@~0.3.2:
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
+
+underscore@~1.4.4:
+  version "1.4.4"
+  resolved "http://registry.npm.taobao.org/underscore/download/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
 
 unpipe@1.0.0:
   version "1.0.0"
