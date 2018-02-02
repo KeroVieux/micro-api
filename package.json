@@ -1,12 +1,19 @@
 {
-  "name": "json-api",
+  "name": "micro-api",
   "scripts": {
     "start": "micro",
     "start_pm2": "pm2 start ecosystem.config.js --only dev-pm2"
   },
   "dependencies": {
     "fs-router": "^0.4.0",
+    "joi": "^13.1.1",
+    "lodash": "^4.17.4",
     "micro": "latest",
-    "request-ip": "^2.0.2"
+    "micro-joi": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
   }
 }

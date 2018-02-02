@@ -9,7 +9,7 @@ const methods = {
     send(res, 200, {
       js,
     })
-  }
+  },
 }
 
 module.exports = methods
