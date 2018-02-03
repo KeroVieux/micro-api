@@ -16,14 +16,14 @@ pm2 kill
 - routes/foos/:id.js
 - postman get get localhost:3000/foos/id
 
-### insert db
-- routes/users/index.js
-- postman post post localhost:3000/users {"name": "Jobs", "birthyear": 1962, "email": "admin@qq.com"}
+### insert mongo
+- routes/mongo/kittens.js
+- postman post localhost:3000/kittens {"name": "Jobs"}
 
-### findOne db
-- routes/users/index.js
-- postman post get localhost:3000/users?id=kn1mPY4tEXo4uP5P {"name": "Jobs", "birthyear": 1962, "email": "admin@qq.com"}
+### findById mongo
+- routes/mongo/kittens.js
+- postman get localhost:3000/kittens?id=5a75f02f32884e9a67299efa
 
-### find db
-- routes/users/find.js
-- postman post post localhost:3000/users {"name": "Jobs"}
+### find All mongo
+- routes/mongo/kittens.js
+- postman get localhost:3000/kittens

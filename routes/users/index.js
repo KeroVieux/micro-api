@@ -6,7 +6,8 @@ const validation = require('micro-joi')
 const db = require('../../database/index')
 
 const validator = validation(Joi.object({
-  name: Joi.string().alphanum().min(3).max(30).required(),
+  name: Joi.string().alphanum().min(3).max(30)
+    .required(),
   birthyear: Joi.number().integer().min(1900).max(2013),
   email: Joi.string().email(),
 }))
@@ -14,12 +15,12 @@ const validator = validation(Joi.object({
 
 module.exports.GET = async (req, res) => {
   if (req.query && req.query.id) {
-    return db.users.findOne({ _id: req.query.id }, function (err, result) {
+    return db.users.findOne({ _id: req.query.id }, (err, result) => {
       if (err) {
         return send(res, 500, err)
       }
       return send(res, 200, {
-        result: result,
+        result,
       })
     })
   }

@@ -10,6 +10,7 @@
     "lodash": "^4.17.4",
     "micro": "latest",
     "micro-joi": "^3.1.0",
+    "mongoose": "^5.0.3",
     "nedb": "^1.8.0",
     "request-ip": "^2.0.2"
   },

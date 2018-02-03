@@ -10,3 +10,4 @@ selenium-debug.log
 jsdoc/
 test/
 .cache/
+argument.config.js
