@@ -1,5 +1,12 @@
-const { send } = require('micro')
+const _ = require('lodash')
+const { json, send } = require('micro')
 
 module.exports.POST = async (req, res) => {
-  send(res, 200, { params: req.params, query: req.query })
+  if (_.isObject(req.body)) {
+    const js = await json(req)
+    return send(res, 200, {
+      js,
+    })
+  }
+  return send(res, 500, 'My custom error!')
 }

@@ -14,4 +14,16 @@ pm2 kill
 - postman post localhost:3000/foo/post ({ a: 1, b: 2 })
 ### params
 - routes/foos/:id.js
-- postman get localhost:3000/foos/id
+- postman get get localhost:3000/foos/id
+
+### insert mongo
+- routes/mongo/kittens.js
+- postman post localhost:3000/kittens {"name": "Jobs"}
+
+### findById mongo
+- routes/mongo/kittens.js
+- postman get localhost:3000/kittens?id=5a75f02f32884e9a67299efa
+
+### find All mongo
+- routes/mongo/kittens.js
+- postman get localhost:3000/kittens
