@@ -18,12 +18,12 @@ pm2 kill
 
 ### insert mongo
 - routes/mongo/kittens.js
-- postman post localhost:3000/kittens {"name": "Jobs"}
+- postman post localhost:3000/mongo/kittens {"name": "Jobs"}
 
 ### findById mongo
 - routes/mongo/kittens.js
-- postman get localhost:3000/kittens?id=5a75f02f32884e9a67299efa
+- postman get localhost:3000/mongo/kittens?id=5a75f02f32884e9a67299efa
 
 ### find All mongo
 - routes/mongo/kittens.js
-- postman get localhost:3000/kittens
+- postman get localhost:3000/mongo/kittens
