@@ -2,9 +2,21 @@
 ## How to start
 ```
 yarn
-npm start_pm2
-pm2 kill
+yarn start
 ```
+
+## deploy via docker
+### prepare for docker
+1. Dockerfile
+2. .dockerignore
+
+### build && run the image
+`docker build -t "kero2333/micro-api" . && docker run -p 3000:3000 -d kero2333/micro-api`
+
+## open page
+`curl localhost:3000/foo/get`
+
+
 ## Guide
 ### query
 - routes/foo/get.js

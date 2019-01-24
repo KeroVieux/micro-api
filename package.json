@@ -2,7 +2,9 @@
   "name": "micro-api",
   "scripts": {
     "start": "micro",
-    "start_pm2": "pm2 start ecosystem.config.js --only dev-pm2"
+    "build": "docker build -t 'kero2333/micro-api' .",
+    "run": "docker run -p 3000:3000 --name micro-api -d kero2333/micro-api",
+    "build&run": "docker build -t 'kero2333/micro-api' . && docker run -p 3000:3000 --name micro-api -d kero2333/micro-api"
   },
   "dependencies": {
     "fs-router": "^0.4.0",
