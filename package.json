@@ -2,9 +2,10 @@
   "name": "micro-api",
   "scripts": {
     "start": "micro",
-    "build": "docker build -t 'kero2333/micro-api' .",
-    "run": "docker run -p 3000:3000 --name micro-api -d kero2333/micro-api",
-    "build&run": "docker build -t 'kero2333/micro-api' . && docker run -p 3000:3000 --name micro-api -d kero2333/micro-api"
+    "dev": "micro-dev",
+    "dockerBuild": "docker build -t 'micro-api' .",
+    "dockerRun": "docker run -p 3000:3000 --name micro-api -d micro-api",
+    "dockerBuild&dockerRun": "docker build -t 'micro-api' . && docker run -p 3000:3000 --name micro-api -d micro-api"
   },
   "dependencies": {
     "fs-router": "^0.4.0",
@@ -13,7 +14,7 @@
     "levelup": "^2.0.2",
     "lodash": "^4.17.4",
     "micro": "latest",
-    "micro-cors": "^0.1.0",
+    "micro-cors": "^0.1.1",
     "micro-joi": "^3.1.0",
     "mongoose": "^5.0.3",
     "nedb": "^1.8.0",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "micro-dev": "^3.0.0"
   }
 }

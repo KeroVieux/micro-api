@@ -11,10 +11,10 @@ yarn start
 2. .dockerignore
 
 ### build && run the image
-`docker build -t "kero2333/micro-api" . && docker run -p 3000:3000 -d kero2333/micro-api`
+`yarn dockerBuild&dockerRun`
 
 ## open page
-`curl localhost:3000/foo/get`
+`curl localhost:3000/foo/`
 
 
 ## Guide
