@@ -20,13 +20,6 @@ const methods = {
       data: []
       )
   },
-  POST1: validator(async (req, res) => {
-    return send(res, 200, {
-      msg: '成功',
-      code: 0,
-      data: await json(req),
-    })
-  }),
   POST: cors((req, res) => { return send(res, 200, { a: 1 }) }),
 }
 
